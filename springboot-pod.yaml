@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: springboot-docker-pod
+spec:
+  containers:
+  - name: springboot-docker
+    image: registry.cn-shanghai.aliyuncs.com/jenkinscloudsyngenta/jenkins:gs-sprint-boot
+    imagePullPolicy: IfNotPresent
